@@ -1,4 +1,4 @@
-# 🎨 Air Canvas Premium – AI Powered Virtual Painter
+# 🎨 Air Canvas Premium – Yapay Zeka Destekli Sanal Çizim Uygulaması
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?style=for-the-badge\&logo=python\&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg?style=for-the-badge\&logo=opencv\&logoColor=white)
@@ -8,126 +8,137 @@
 
 ---
 
-## 📌 About Project
+## 📌 Proje Hakkında
 
-**Air Canvas Premium** is an AI-powered virtual drawing application built with
-Computer Vision, OpenCV and Google MediaPipe.
+**Air Canvas Premium**, Computer Vision, OpenCV ve Google MediaPipe kullanılarak geliştirilmiş
+yapay zeka destekli bir sanal çizim uygulamasıdır.
 
-You can draw in the air using only your hand gestures without touching the screen.
+Bu uygulama sayesinde ekrana dokunmadan, sadece el hareketleri ile
+havada çizim yapabilirsiniz.
 
-This project includes advanced UI logic, hitbox algorithms and real-time gesture tracking.
+Bu proje klasik air drawing projelerinden farklı olarak:
 
-✔ Safe UI Zones
-✔ Aim Assist Hitbox
-✔ Dynamic Brush Size
-✔ Shape Preview Engine
-✔ Layered Interface System
-✔ Real-time Hand Tracking
+✔ Güvenli menü alanları
+✔ Hitbox destekli seçim sistemi
+✔ Dinamik fırça kalınlığı
+✔ Katmanlı arayüz sistemi
+✔ Gerçek zamanlı el takibi
+✔ Şekil çizim motoru
+
+özellikleri ile geliştirilmiştir.
 
 ---
 
-## ✨ Features
+## ✨ Özellikler
 
-### 🛡 Safe Zone System
+### 🛡 Safe Zone (Güvenli Bölge)
 
-Drawing automatically stops when the cursor enters menu areas.
+Menü alanına geldiğinizde çizim durur.
+Yanlışlıkla arayüz boyanmaz.
 
-### 🎯 Aim Assist Hitbox
+### 🎯 Aim Assist (Hitbox Sistemi)
 
-Buttons have buffer zone for smoother selection.
+Butonlara tam basmanız gerekmez.
+Ekstra seçim alanı sayesinde daha akıcı kontrol sağlar.
 
-### 📐 Dynamic Brush Size
+### 📐 Dinamik Fırça Kalınlığı
 
-Brush size changes with finger distance.
+Başparmak ve işaret parmağı mesafesine göre fırça kalınlığı değişir.
 
-Range:
+Aralık:
 
 5px → 50px
 
-### 🎨 Layered UI System
+### 🎨 Katmanlı Arayüz Sistemi
 
-* UI always on top
-* Canvas below
-* Transparent panels
-* Modern flat design
+* UI her zaman üstte
+* Canvas altta
+* Yarı saydam paneller
+* Modern tasarım
 
-### 🔳 Shape Preview Engine
+### 🔳 Shape Preview Motoru
 
-* Rectangle
-* Circle
-* Live preview
-* Smart placement
+* Dikdörtgen
+* Çember
+* Canlı önizleme
+* Sonradan yerleştirme
 
----
-
-## 🕹 Gesture Controls
-
-| Gesture          | Mode  | Description    |
-| ---------------- | ----- | -------------- |
-| ☝ Index Finger   | Draw  | Free drawing   |
-| ✌ Two Fingers    | Hover | Menu selection |
-| 🤏 Three Fingers | Size  | Brush size     |
-| 🛑 Clean Button  | Reset | Clear canvas   |
+Profesyonel çizim deneyimi sağlar.
 
 ---
 
-## 📦 Requirements
+## 🕹 Gesture Kontrolleri
 
-* Python 3.10 or 3.11 recommended
-* Webcam required
+| Hareket          | Mod      | Açıklama      |
+| ---------------- | -------- | ------------- |
+| ☝ İşaret Parmağı | Çizim    | Serbest çizim |
+| ✌ İki Parmak     | Hover    | Menü seçimi   |
+| 🤏 Üç Parmak     | Kalınlık | Fırça boyutu  |
+| 🛑 Temizle       | Reset    | Tuvali sil    |
 
 ---
 
-## ⚙ Installation
+## 📦 Gereksinimler
 
-### 1. Clone repo
+* Python 3.10 veya 3.11 önerilir
+* Kamera gerekli
 
-```
+---
+
+## ⚙ Kurulum
+
+### 1. Repoyu indir
+
+```bash
 git clone https://github.com/ardairmk55/air_canvas
 cd air_canvas
 ```
 
-### 2. Create virtual environment
+### 2. Sanal ortam oluştur
 
 Windows
 
-```
+```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
 Linux / Mac
 
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+### 3. Kütüphaneleri yükle
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-If requirements.txt yoksa:
+Eğer requirements.txt yoksa:
 
-```
+```bash
 pip install opencv-python mediapipe numpy
 ```
 
 ---
 
-## ▶ Run
+## ▶ Çalıştırma
 
-```
+```bash
 python air_canvas.py
 ```
 
-Press Q to exit.
+Çıkmak için:
+
+```
+Q
+```
 
 ---
 
-## 📂 Project Structure
+## 📂 Proje Yapısı
 
 ```
 air_canvas/
@@ -142,7 +153,7 @@ air_canvas/
 
 ---
 
-## 🧠 Technologies
+## 🧠 Kullanılan Teknolojiler
 
 * OpenCV
 * MediaPipe
@@ -157,25 +168,23 @@ air_canvas/
 
 ## 📷 Demo
 
-Add gif here
-
 /demo/demo.gif
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Geliştirici
 
 Arda Irmak
-Gümüşhane University
-Computer Programming
+Gümüşhane Üniversitesi
+Bilgisayar Programcılığı
 
 GitHub:
 https://github.com/ardairmk55
 
 ---
 
-## 📄 License
+## 📄 Lisans
 
 MIT License
 
-Free to use, modify and share.
+Serbestçe kullanabilir, değiştirebilir ve paylaşabilirsiniz.
