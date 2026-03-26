@@ -138,18 +138,93 @@ Q
 
 ---
 
-## 📂 Proje Yapısı
+---
+
+## 📥 ZIP indirerek kurulum (Git kullanmadan)
+
+Git kullanmadan projeyi çalıştırmak için aşağıdaki adımları takip edin.
+
+### 1. ZIP indir
+
+GitHub sayfasına girin:
+
+https://github.com/ardairmk55/air_canvas
+
+Code → Download ZIP
+
+### 2. ZIP dosyasını çıkar
+
+İndirilen dosyaya sağ tık → Extract / Ayıkla
+
+Klasör yapısı şöyle olmalı:
 
 ```
-air_canvas/
+air_canvas-main/
 │
 ├── air_canvas.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-└── demo/
-    └── demo.gif
 ```
+
+### 3. Klasörü terminalde aç
+
+Windows:
+
+Klasöre gir → üstte adres çubuğuna yaz:
+
+```
+cmd
+```
+
+Linux / Mac:
+
+Terminal aç → klasöre git
+
+```
+cd air_canvas-main
+```
+
+### 4. Sanal ortam oluştur (önerilir)
+
+Windows
+
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+Linux / Mac
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 5. Kütüphaneleri yükle
+
+```
+pip install -r requirements.txt
+```
+
+Eğer hata olursa:
+
+```
+pip install opencv-python mediapipe numpy
+```
+
+### 6. Programı çalıştır
+
+```
+python air_canvas.py
+```
+
+### 7. Kamera açılmazsa
+
+- Kameranın başka uygulamada açık olmadığından emin olun
+- Python 3.10 kullanmanız önerilir
+
+---
+
 
 ---
 
