@@ -1,154 +1,176 @@
 # 🎨 Air Canvas Premium – AI Powered Virtual Painter
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.10+-green.svg?style=for-the-badge&logo=opencv&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-orange.svg?style=for-the-badge&logo=google&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg?style=for-the-badge\&logo=python\&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg?style=for-the-badge\&logo=opencv\&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10+-orange.svg?style=for-the-badge\&logo=google\&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-red.svg?style=for-the-badge)
 
 ---
 
-## 📌 Proje Hakkında
+## 📌 About Project
 
-**Air Canvas Premium**, bilgisayarlı görü (Computer Vision) ve  
-Google MediaPipe teknolojilerini kullanarak ekrana dokunmadan,  
-sadece el hareketleri ile havada profesyonel çizim yapmanızı sağlayan  
-AI destekli bir sanal çizim uygulamasıdır.
+**Air Canvas Premium** is an AI-powered virtual drawing application built with
+Computer Vision, OpenCV and Google MediaPipe.
 
-Bu proje, klasik air drawing projelerinden farklı olarak  
-⚡ UX / UI odaklı  
-⚡ Katmanlı arayüz mimarili  
-⚡ Akıllı hitbox algoritmalı  
-⚡ Gerçek zamanlı gesture kontrol sistemli  
-şekilde geliştirilmiştir.
+You can draw in the air using only your hand gestures without touching the screen.
+
+This project includes advanced UI logic, hitbox algorithms and real-time gesture tracking.
+
+✔ Safe UI Zones
+✔ Aim Assist Hitbox
+✔ Dynamic Brush Size
+✔ Shape Preview Engine
+✔ Layered Interface System
+✔ Real-time Hand Tracking
 
 ---
 
-## ✨ Öne Çıkan Özellikler
+## ✨ Features
 
-### 🛡️ Safe Zone (Güvenli Bölge)
-Menü alanlarının üzerine geldiğinizde çizim otomatik durur.  
-Yanlışlıkla menüleri boyamazsınız.
+### 🛡 Safe Zone System
 
-### 🎯 Aim Assist (Hitbox Buffer)
-Butonlara tam basmanız gerekmez.  
-30px çekim alanı sayesinde seçimler çok daha akıcı olur.
+Drawing automatically stops when the cursor enters menu areas.
 
-### 📐 Dinamik Fırça Kalınlığı
-Başparmak + işaret parmağı mesafesine göre  
-fırça kalınlığı canlı değişir.
+### 🎯 Aim Assist Hitbox
 
-Aralık:
+Buttons have buffer zone for smoother selection.
+
+### 📐 Dynamic Brush Size
+
+Brush size changes with finger distance.
+
+Range:
 
 5px → 50px
 
-### 🎨 Katmanlı UI (Z-Index System)
+### 🎨 Layered UI System
 
-- UI her zaman üstte kalır
-- Canvas altta çalışır
-- Modern flat design
-- Yarı saydam panel sistemi
+* UI always on top
+* Canvas below
+* Transparent panels
+* Modern flat design
 
 ### 🔳 Shape Preview Engine
 
-- Dikdörtgen
-- Çember
-- Canlı önizleme
-- Sonradan mühürleme
-
-Profesyonel çizim deneyimi sağlar.
+* Rectangle
+* Circle
+* Live preview
+* Smart placement
 
 ---
 
-## 🕹️ Gesture Kontrolleri
+## 🕹 Gesture Controls
 
-| Hareket | Mod | Açıklama |
-|--------|------|----------|
-| ☝️ İşaret Parmağı | Çizim | Serbest çizim yapar |
-| ✌️ İşaret + Orta | Hover / Seçim | Menü seçer |
-| 🤏 3 Parmak | Kalınlık | Fırça boyutu değişir |
-| 🛑 2 Parmak + TEMİZLE | Reset | Tuvali temizler |
-
----
-
-## 🚀 Kurulum
-
-### 1. Python sürümü
-
-Önerilen:
-
-Python 3.10 veya 3.11
+| Gesture          | Mode  | Description    |
+| ---------------- | ----- | -------------- |
+| ☝ Index Finger   | Draw  | Free drawing   |
+| ✌ Two Fingers    | Hover | Menu selection |
+| 🤏 Three Fingers | Size  | Brush size     |
+| 🛑 Clean Button  | Reset | Clear canvas   |
 
 ---
 
-### 2. Kütüphaneler
+## 📦 Requirements
 
-```bash
+* Python 3.10 or 3.11 recommended
+* Webcam required
+
+---
+
+## ⚙ Installation
+
+### 1. Clone repo
+
+```
+git clone https://github.com/ardairmk55/air_canvas
+cd air_canvas
+```
+
+### 2. Create virtual environment
+
+Windows
+
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+Linux / Mac
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+If requirements.txt yoksa:
+
+```
 pip install opencv-python mediapipe numpy
 ```
 
 ---
 
-### 3. Dosya oluştur
+## ▶ Run
 
 ```
-air_canvas.py
-```
-
-Kodları içine yapıştır.
-
----
-
-### 4. Çalıştır
-
-```bash
 python air_canvas.py
 ```
 
-Çıkmak için:
+Press Q to exit.
+
+---
+
+## 📂 Project Structure
 
 ```
-Q
+air_canvas/
+│
+├── air_canvas.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── demo/
+    └── demo.gif
 ```
 
 ---
 
-## 🧠 Kullanılan Teknolojiler
+## 🧠 Technologies
 
-- OpenCV
-- MediaPipe
-- NumPy
-- Computer Vision
-- Hand Tracking
-- Gesture Recognition
-- UX Hitbox Algorithm
-- Layered UI System
+* OpenCV
+* MediaPipe
+* NumPy
+* Computer Vision
+* Hand Tracking
+* Gesture Recognition
+* UI Layer System
+* Hitbox Algorithm
 
 ---
 
-## 📷 Demo (İsteğe Bağlı)
+## 📷 Demo
 
-Buraya GIF koyabilirsin
+Add gif here
 
-```
 /demo/demo.gif
-```
 
 ---
 
 ## 👨‍💻 Developer
 
-**Arda Irmak**  
-Gümüşhane Üniversitesi  
-Bilgisayar Programcılığı – 2. Sınıf  
+Arda Irmak
+Gümüşhane University
+Computer Programming
 
-💡 Bu proje;
-
-- Computer Vision öğrenmek
-- MediaPipe deneyimi kazanmak
-- UX algoritmaları geliştirmek
-- Modern UI mimarisi kurmak
-
-amacıyla geliştirilmiştir.
+GitHub:
+https://github.com/ardairmk55
 
 ---
 
@@ -156,4 +178,4 @@ amacıyla geliştirilmiştir.
 
 MIT License
 
-Free to use / modify / share
+Free to use, modify and share.
